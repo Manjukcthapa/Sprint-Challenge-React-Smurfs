@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from "axios";
+import { NavLink} from 'react-router-dom';
 
 class SmurfForm extends Component {
   constructor(props) {
@@ -66,6 +67,7 @@ axios
             name="height"
           />
           <button type="submit">Add to the village</button>
+           <NavLink to ='/'>homepage </NavLink> 
         </form>
       </div>
     );

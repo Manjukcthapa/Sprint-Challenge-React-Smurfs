@@ -41,10 +41,25 @@ class App extends Component {
       <div className="App">
       <nav>
         <NavLink to='/'>Home</NavLink>
-        <NavLink to = '/'>Add Smurf</NavLink>
+        <NavLink to = '/addSmurf'>Add Smurf</NavLink>
       </nav>
-        <SmurfForm  addNewSmurf={this.addNewSmurf}/>
-        <Smurfs smurfs={this.state.smurfs} />
+
+      <Route 
+        exact path='/' 
+        render=
+            {props =>
+                <Smurfs {...props} smurfs={this.state.smurfs} />
+            }
+     />
+        
+        <Route 
+        path='/addSmurf' 
+        render=
+            {props =>
+                <SmurfForm {...props} addNewSmurf={this.addNewSmurf} />
+            }
+            />
+
       </div>
     );
   }
