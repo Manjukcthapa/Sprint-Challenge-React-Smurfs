@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axios from "axios";
 
 class SmurfForm extends Component {
   constructor(props) {
@@ -18,6 +19,19 @@ const newSmurFriend = {
   age:this.state.age,
   height:this.state.height
 }
+
+axios 
+.post('http://localhost:3333/smurfs', newSmurFriend)
+
+.then(response => {
+  console.log( response);
+  this.props.addNewSmurf(response.data)
+  })
+
+  .catch(error => {
+    console.error('Error:', error);
+  });
+
     this.setState({
       name: '',
       age: '',
