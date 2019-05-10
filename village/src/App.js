@@ -40,8 +40,8 @@ class App extends Component {
       
       <div className="App">
       <nav>
-        <NavLink to='/'>Home</NavLink>
-        <NavLink to = '/addSmurf'>Add Smurf</NavLink>
+        <NavLink className="navbar" to='/'>Home</NavLink>
+        <NavLink className="navbar" to = '/addSmurf'>Add Smurf</NavLink>
       </nav>
 
       <Route 

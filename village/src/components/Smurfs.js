@@ -1,22 +1,25 @@
 import React, { Component } from 'react';
+import './Smurf.css';
 
 import Smurf from './Smurf';
 
 class Smurfs extends Component {
   render() {
     return (
-      <div className="Smurfs">
+      <div className="Smurfitem">
         <h1>Smurf Village</h1>
-        <ul>
+        <ul className="items">
           {this.props.smurfs.map(smurf => {
             return (
-              <Smurf
+              
+              <Smurf 
                 name={smurf.name}
                 id={smurf.id}
                 age={smurf.age}
                 height={smurf.height}
                 key={smurf.id}
               />
+              
             );
           })}
         </ul>
