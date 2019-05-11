@@ -1,0 +1,58 @@
+.SmurfForm{
+    text-align: center;
+    border:1px solid black;
+    margin-top: 100px;
+    width:500px;
+    margin-left: 400px;
+    height:400px;
+    background-color:#AC83BB;
+    ;
+    border-radius: 20px;
+}
+
+.inputtext{
+width:300px;
+text-align: center;
+margin-top: 30px;
+height:30px;
+font-size: 20px;
+background-color: #C2C0CC;
+}
+
+.button{
+    width:300px;
+    margin-top: 30px;
+    height:30px;
+    border-radius: 10px;
+    background: #286B91;
+    font-size: 20px;
+}
+
+p{
+    margin-top: 20px;
+}
+
+.Smurf{
+    border:1px solid black;
+    width:400px;
+    height:200px;
+    margin-bottom:20px;
+    border-radius: 20px;
+    /* background: #17A5D6; */
+    background: #285BB6;
+    text-align: center;
+    margin-left: 40px;
+   /* color:#75B796; */
+   color:#f0f0f0;
+    
+
+}
+
+
+.items{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 200px;
+    
+}
